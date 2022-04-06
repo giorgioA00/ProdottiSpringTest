@@ -10,8 +10,8 @@ public class ProdottoNonTrovatoRisposta {
     @ExceptionHandler(ProdottoNonTrovato.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
 
-    public String RispostaNonTrovata(ProdottoNonTrovato ex) {
-        return ex.getMessage();
+    public String RispostaNonTrovata(ProdottoNonTrovato exc) {
+        return exc.getMessage();
     }
 
 }
