@@ -12,7 +12,6 @@ public class ProdottiSpringTestApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(ProdottiSpringTestApplication.class, args);
-		logger.info("Inizio della mia App spring");
 	}
 
 
