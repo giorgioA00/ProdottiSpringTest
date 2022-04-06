@@ -22,7 +22,7 @@ public class ProdottiRestController {
     }
 
     @GetMapping("/prodotti")
-    private List<Prodotto> tuttiProdotti(){
+    public List<Prodotto> tuttiProdotti(){
         return repository.findAll();
     }
 
