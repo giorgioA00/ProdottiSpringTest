@@ -35,3 +35,6 @@ Test finale: Applicazione ricerca e inserimento prodotti in spring
 
 ###Delete
 ![figure](Screen Postman/Delete.png)
+
+###Docker
+![figure](Screen Postman/Docker.png)
