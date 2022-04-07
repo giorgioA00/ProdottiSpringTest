@@ -58,12 +58,7 @@ public class ProdottiRestController {
     void eliminaProdotto(@PathVariable Long id){
         repository.deleteById(id);
     }
-    /*
-    @GetMapping("/prodotti/ricercaprezzo")
-    public List<Prodotto> ricercaPerPrezzo(@RequestParam(name="min") float min,
-                                       @RequestParam(name="max") float max){
-        return repository.findByprezzoBetween(min,max);
-    }*/
+
     @GetMapping("/prodotti/ricercaprezzo")
     public List<Prodotto> ricercaPerPrezzo(@RequestParam(name = "min") float min,
                                            @RequestParam(name = "max") float max) {
