@@ -1,10 +1,10 @@
 FROM adoptopenjdk:11-jre-hotspot
-LABEL maintainer="dev lecce"
+LABEL maintainer="giorgio accogli"
 LABEL version="0.0.1"
-LABEL description="user rest api"
+LABEL description="prodotto rest api"
 RUN apt update && apt install tzdata -y
 ENV TZ="Europe/Rome"
-RUN mkdir -p /opt/user/backend
-COPY ../../../ApplicazioneRestSpring-main/ApplicazioneRestSpring/target/ApplicazioneRestSpring-0.0.1-SNAPSHOT.jar /opt/user/backend
-WORKDIR /opt/user/backend
-ENTRYPOINT ["java", "-jar","ApplicazioneRestSpring-0.0.1-SNAPSHOT.jar"]
+RUN mkdir -p /opt/prodotto/backend
+COPY target/ProdottiSpringTest-0.0.1-SNAPSHOT.jar /opt/prodotto/backend
+WORKDIR /opt/prodotto/backend
+ENTRYPOINT ["java", "-jar","ProdottiSpringTest-0.0.1-SNAPSHOT.jar"]

@@ -1,16 +1,16 @@
 version: "3"
 services:
-  usertest:
-    image: usertest:latest
+  prodottorest:
+    image: prodotto:latest
     build:
-      context: ../../../ApplicazioneRestSpring-main
+      context: .
       dockerfile: Dockerfile
-    container_name: usertest
+    container_name: prodotto
     restart: always
     ports:
       - 8080:8080
     networks:
-      - usertest
+      - prodotto
 networks:
-  usertest:
+  prodotto:
     external: true
