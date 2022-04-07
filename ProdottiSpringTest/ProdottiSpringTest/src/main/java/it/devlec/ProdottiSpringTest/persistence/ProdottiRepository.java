@@ -8,7 +8,11 @@ import java.util.List;
 
 public interface ProdottiRepository extends JpaRepository<Prodotto, Long> {
 
-    List<Prodotto> findBynome(String nome);
-    //List<Prodotto> findByPrezzoBetween(float min,float max);
-    //List<Prodotto> findBydataBetween(Date datada,Date dataa);
+    List<Prodotto> findByNome(String nome);
+    List<Prodotto> findBydataacquisto(Date data);
+    List<Prodotto> findBydataacquistoBetween(Date datada, Date dataa);
+    List<Prodotto> findByprezzoBetween(float min,float max);
+    List<Prodotto> findAllByquantita(float quantita);
+    List<Prodotto> findByquantitaLessThan(float max);
+    List<Prodotto> findByOrderByQuantita();
 }
