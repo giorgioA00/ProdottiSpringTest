@@ -77,13 +77,6 @@ public class ProdottiRestController {
     public List<Prodotto> ricercaPerDataDiAcquisto(@RequestParam(name = "data") @DateTimeFormat(pattern = "dd-MM-yyyy") Date data){
         return repository.findBydataacquisto(data);
     }
-    @GetMapping("/prodotti/ricercadataacquisto")
-    public List<Prodotto> ricercaPerDataDiAcquisto(@RequestParam(name = "datda") @DateTimeFormat(pattern = "dd-MM-yyyy")
-                                                   Date datada,
-                                                   @RequestParam(name = "dataa") @DateTimeFormat(pattern = "dd-MM-yyyy")
-                                                   Date dataa){
-        return repository.findBydataacquistoBetween(datada, dataa);
-    }
 
     @PostMapping("/caricafile")
     public String caricaFile(@RequestParam("file") MultipartFile file){

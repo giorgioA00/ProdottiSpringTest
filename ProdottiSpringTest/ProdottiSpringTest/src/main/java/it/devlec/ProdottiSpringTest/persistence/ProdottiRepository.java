@@ -10,7 +10,6 @@ public interface ProdottiRepository extends JpaRepository<Prodotto, Long> {
 
     List<Prodotto> findByNome(String nome);
     List<Prodotto> findBydataacquisto(Date data);
-    List<Prodotto> findBydataacquistoBetween(Date datada, Date dataa);
     List<Prodotto> findByprezzoBetween(float min,float max);
     List<Prodotto> findAllByquantita(float quantita);
     List<Prodotto> findByquantitaLessThan(float max);
