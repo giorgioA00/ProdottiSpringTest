@@ -2,7 +2,7 @@
 
 ##Esercitazione fonale JEE
 
-test finale: Applicazione ricerca e inserimento prodotti in spring
+Test finale: Applicazione ricerca e inserimento prodotti in spring
 
 ###Repository gitHub: https://github.com/giorgioA00/ProdottiSpringTest
 
